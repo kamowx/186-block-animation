@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+
+<style>
+body {
+  margin: 0;
+  background: #237d6e;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 800px;
+  height: 450px;
+  margin: 50px auto;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Текст */
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 48px;
+  color: #d6f4ff;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Фигуры */
+.shape {
+  position: absolute;
+}
+
+/* Круг (оранжевый) */
+.circle {
+  width: 130px;
+  height: 130px;
+  background: #ff8c3a;
+  border-radius: 50%;
+  bottom: 100%;
+  left: 45%;
+}
+
+/* Зеленая линия */
+.line {
+  width: 350px;
+  height: 18px;
+  background: #4fd1a5;
+  bottom: 110%;
+  left: 21%;
+    transform: rotate(895deg);
+}
+
+/* Фиолетовый овал */
+.oval {
+  width: 160px;
+  height: 90px;
+  background: #a78bfa;
+  border-radius: 50%;
+  right: 35px;
+  bottom: 100%;
+}
+
+/* Красный прямоугольник */
+.rect {
+  width: 90px;
+  height: 220px;
+  background: #ff4d4d;
+  transform: rotate(45deg);
+  right: 90px;
+  bottom: 100%;
+}
+
+/* Зеленый ромб */
+.diamond {
+  width: 110px;
+  height: 110px;
+  background: #34d399;
+  transform: rotate(45deg);
+  right: 200px;
+  bottom: 120%;
+}
+
+/* Синий шестиугольник */
+.hex {
+  position: absolute;
+  bottom: 110%;
+  left: 95px;
+}
+
+.hex:before,
+.hex:after {
+  content: "";
+  position: absolute;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.hex:before {
+  bottom: 100%;
+  border-bottom: 22px solid #4f6df5;
+}
+
+.hex:after {
+  top: 100%;
+  border-top: 22px solid #4f6df5;
+}
+
+/* Желтая полоса */
+.yellow {
+  width: 200px;
+  height: 81px;
+  background: #facc15;
+  bottom:100%;
+  left: 0;
+  position: absolute;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Nourish Change</h1>
+  <div class="subtitle">A step by step approach to sustainability</div>
+
+  <div class="shape circle"></div>
+  <div class="shape line"></div>
+  <div class="shape oval"></div>
+  <div class="shape rect"></div>
+  <div class="shape diamond"></div>
+  <div class="hex"></div>
+  <div class="shape yellow"></div>
+</div>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
